@@ -9,7 +9,11 @@ import org.apache.commons.lang.StringUtils;
 
 //TODO LANÇAR EXCEPTION QUANDO INFORMAR VALOR INVÁLIDO
 public class ArquivoUtils {
-	public static String BRANCO = "";
+	public static final String BRANCO = "";
+	public static final String NUMERO_MAXIMO_REGISTROS_NO_ARQUIVO = "9999";
+	public static final String NUMERO_MAXIMO_REGISTROS_NO_LOTE = "9999";
+	public static final String NUMERO_MAXIMO_SERVICOS_NO_ARQUIVO = "9999";
+	public static final String NOVA_LINHA = "\n";
 	
 	public static String getCampoAlfaNumerico(String campo, int tamanhoCampo){
 		if(campo==null) return StringUtils.rightPad("", tamanhoCampo, " ");
