@@ -158,14 +158,4 @@ public class ArquivoUtilsTest {
 		String campoSaida = ArquivoUtils.getCampoNumerico(campoEntrada, tamanhoCampo);
 		assertEquals("0000000123", campoSaida);
 	}
-	
-	@Test
-	public void getCampoNumericoDeveDiminuirTamanhoDoCampoQuandoCampoEntradaForMuitoGrande(){
-		int campoEntrada = 1234567890;
-		int tamanhoCampo = 5;
-		String campoSaida = ArquivoUtils.getCampoNumerico(campoEntrada, tamanhoCampo);
-		assertEquals("12345", campoSaida);
-	}
-	
-
 }
